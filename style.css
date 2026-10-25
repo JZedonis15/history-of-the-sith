@@ -1,0 +1,61 @@
+
+/* Main page */
+body {
+    background-color: #222222;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Main title */
+h1 {
+    color: red;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-bottom: 2px solid red;
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Section headings */
+h2 {
+    color: lightcoral;
+    margin: 15px;
+    padding: 10px;
+}
+
+/* Class selector */
+.sith-section {
+    background-color: #333333;
+    border: 1px solid red;
+    margin: 20px;
+    padding: 15px;
+}
+
+/* ID selector */
+#featured {
+    background-color: #442222;
+    border: 2px solid red;
+    margin: 20px;
+    padding: 15px;
+}
+
+/* Links */
+a {
+    color: lightblue;
+}
+
+/* Images */
+img {
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+}
