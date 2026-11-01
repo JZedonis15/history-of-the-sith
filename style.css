@@ -59,3 +59,55 @@ img {
     padding: 5px;
     border: 1px solid gray;
 }
+
+/* Responsive sizing */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+}
+
+/* Prevent images from overflowing */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sith Lords Grid */
+#lords {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+}
+
+/* Sith Lord cards */
+#lords article {
+    background-color: #333333;
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 15px;
+    min-width: 0;
+}
+
+/* Keep the section title above the cards */
+#lords h2 {
+    grid-column: 1 / -1;
+}
+
+/* Tablet layout - 768px and wider */
+@media screen and (min-width: 768px) {
+    #lords {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Desktop layout - 1200px and wider */
+@media screen and (min-width: 1200px) {
+    #lords {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
